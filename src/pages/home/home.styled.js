@@ -9,30 +9,41 @@ export const HomeContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  &:hover {
-    background-image: linear-gradient(
-      90deg,
-      #00ff85 15%,
-      #9dc725,
-      transparent 75%
-    );
-    border-radius: 10px;
-  }
+  /* transition: 0.5s;
+  background-image: linear-gradient(
+    90deg,
+    #00ff85 15%,
+    #9dc725,
+    transparent 75%
+  );
+  border-radius: 10px; */
 `;
 
 export const HomeImage = styled.div`
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      transparent
+    ),
+    url(${ProfilePic});
+  background-position: center;
+  background-size: cover;
   position: relative;
   height: 25rem;
   width: 20rem;
-  /* background-position: center;
-  background-size: cover; */
   display: flex;
   align-items: flex-end;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
   &::before {
-    background-image: url(${ProfilePic});
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 255, 133, 0.87),
+      rgba(157, 199, 37, 0.3),
+      transparent
+    );
     content: "";
     position: absolute;
     top: 0px;
@@ -41,9 +52,16 @@ export const HomeImage = styled.div`
     left: 0px;
     opacity: 1;
     border-radius: 10px;
+    transition: all 1s;
+    z-index: -1;
+    opacity: 0;
   }
   &:hover::before {
-    opacity: 0.5;
+    opacity: 1;
+  }
+  &:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
   }
 `;
 
@@ -57,17 +75,5 @@ export const ImageBtn = styled.div`
   cursor: pointer;
   border-radius: 5px;
   overflow: hidden;
-  &::before {
-    display: flex;
-    align-items: center;
-    content: "Go to linkedin";
-    position: absolute;
-    top: 0;
-    left: -250%;
-    height: 100%;
-  }
-  &:hover::before {
-    left: 110%;
-    display: contents;
-  }
+  transition: all 1s;
 `;
