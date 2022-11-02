@@ -5,6 +5,9 @@ import {
   HomeImage,
   ImageBtn,
   ImageContainer,
+  MyName,
+  Mytitle,
+  NameContainer,
 } from "./home.styled";
 
 const HomePage = () => {
@@ -17,10 +20,12 @@ const HomePage = () => {
           </ImageBtn>
         </HomeImage>
       </ImageContainer>
-      <div>
-        <h1>Hi im john karl neri</h1>
-        <h3>im a freelance front-end developer and I making UI</h3>
-      </div>
+      <NameContainer>
+        <MyName>Hi im john karl neri</MyName>
+        <Mytitle>
+          im a freelance front-end developer and I making UI design
+        </Mytitle>
+      </NameContainer>
     </HomeContainer>
   );
 };

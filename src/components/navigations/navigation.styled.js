@@ -16,6 +16,7 @@ export const NavItem = styled.li`
   margin: 1rem;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: bold;
 `;
 
 export const NavBtn = styled.button`

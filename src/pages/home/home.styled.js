@@ -4,7 +4,6 @@ import ProfilePic from "../../assets/pic.jpg";
 export const HomeContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   padding: 5rem;
 `;
 
@@ -76,4 +75,26 @@ export const ImageBtn = styled.div`
   border-radius: 5px;
   overflow: hidden;
   transition: all 1s;
+`;
+
+export const NameContainer = styled.div`
+  display: block;
+`;
+
+export const MyName = styled.h1`
+  color: white;
+  font-size: 5rem;
+  inline-size: 40rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  font-family: Righteous;
+  margin: 0;
+`;
+
+export const Mytitle = styled.h3`
+  color: white;
+  font-weight: 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+  inline-size: 25rem;
 `;
