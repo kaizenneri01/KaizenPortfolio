@@ -107,7 +107,7 @@ export const MyName = styled.h1`
 
 export const Mytitle = styled.h3`
   color: #ddded6;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
   inline-size: 25rem;
